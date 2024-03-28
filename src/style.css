@@ -1,0 +1,26 @@
+.container {
+  background-color: aquamarine;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+  gap: 30px;
+  margin: 10px;
+}
+.cardPara {
+  color: brown;
+}
+.btns {
+  display: flex;
+  gap: 30px;
+}
