@@ -17,7 +17,7 @@ function dd() {
   card.className = "card";
   btns.className = "btns";
   cardPara.textContent = "cardPara";
-  cardPara.textContent = " Module One ";
+  cardPara.textContent = " Module O0ne ";
   prev.textContent = "prev";
   next.textContent = "next";
   // next.addEventListener("click", () => console.log("end"));
@@ -34,11 +34,9 @@ function ChooseModule() {
   main.textContent = "Choose a module level for learning";
   info.textContent = courses.module1[0].title;
 
-  courses.module1.forEach((module) => {
-    console.log("mod");
-  });
+  // console.log("mod");
   dd();
-  cardPara.textContent = " Moduleone ";
+  cardPara.textContent = "Module One";
 
   next.addEventListener("click", chooseUnit);
   prev.addEventListener("click", console.log("home"));
@@ -49,30 +47,36 @@ function ChooseModule() {
 
 function chooseUnit() {
   main.textContent = "Choose a unit";
-  info.textContent = courses.module1[1].Mathematics[0].name;
-  dd();
+  //   info.textContent = courses.module1[1].Mathematics[0].name;
 
-  cardPara.textContent = " Unit1 ";
+  courses.module1.forEach(() => {
+    console.log("unit");
+    dd();
+    cardPara.textContent = "A unit";
+  });
 
-  next.addEventListener("click", module2);
+  next.addEventListener("click", chooseTopic);
   prev.addEventListener("click", ChooseModule);
 }
 
-function module2() {
+function chooseTopic() {
   main.textContent = "Choose a topic";
-  info.textContent = courses.module1[1].Mathematics[1].Algebra[0].name;
+  //   info.textContent = courses.module1[1].Mathematics[1].Algebra[0].name;
 
-  dd();
-  cardPara.textContent = " Topic1 ";
+  courses.module1[1].forEach((module) => {
+    // console.log("mod");
+    dd();
+    cardPara.textContent = "Topics";
+  });
 
   next.addEventListener("click", module3);
   prev.addEventListener("click", chooseUnit);
 }
 
 function module3() {
-  main.textContent =
-    courses.module1[1].Mathematics[1].Algebra[1].units[1].heading;
-  info.textContent = courses.module1[1].Mathematics[1].Algebra[1].units[1].body;
+  //   main.textContent =
+  //     courses.module1[1].Mathematics[1].Algebra[1].units[1].heading;
+  //   info.textContent = courses.module1[1].Mathematics[1].Algebra[1].units[1].body;
 
   const next = document.createElement("button");
   const prev = document.createElement("button");
