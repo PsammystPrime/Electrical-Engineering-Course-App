@@ -3,10 +3,8 @@ const getStarted = document.getElementById("start");
 const info = document.getElementById("text");
 const display = document.querySelector(".display");
 const home = document.querySelector(".home");
-const uploads = document.querySelector(".uploads");
 const cats = document.querySelector(".cats");
 const vision = document.querySelector(".vision");
-const admin = document.querySelector(".admin");
 
 import { courses } from "./courses.js";
 
@@ -64,7 +62,60 @@ function chooseUnit() {
 
     console.log(unit);
 
-    // next.addEventListener("click", chooseTopic);
+    btns.appendChild(next);
+    card.appendChild(cardTitle);
+    card.appendChild(cardPara);
+    card.appendChild(btns);
+    container.appendChild(card);
+    display.appendChild(container);
+  });
+}
+
+function assessments() {
+  display.textContent = "";
+
+  const container = document.createElement("div");
+  const card = document.createElement("div");
+  const cardTitle = document.createElement("h1");
+  const cardPara = document.createElement("p");
+  const btns = document.createElement("div");
+  const next = document.createElement("button");
+  getStarted.textContent = "";
+  container.className = "container";
+  card.className = "card";
+  btns.className = "btns";
+  cardTitle.textContent = "Module One";
+  cardPara.textContent = " It's time for some assessments on the units.";
+  next.textContent = "Next";
+
+  next.addEventListener("click", unitCats);
+
+  btns.appendChild(next);
+  card.appendChild(cardTitle);
+  card.appendChild(cardPara);
+  card.appendChild(btns);
+  container.appendChild(card);
+  display.appendChild(container);
+}
+
+function unitCats() {
+  display.textContent = "";
+  main.textContent = "Choose a unit";
+
+  courses.forEach((unit) => {
+    const container = document.createElement("div");
+    const card = document.createElement("div");
+    const cardTitle = document.createElement("h1");
+    const cardPara = document.createElement("p");
+    const btns = document.createElement("div");
+    const next = document.createElement("button");
+    getStarted.textContent = "";
+    container.className = "container";
+    card.className = "card";
+    btns.className = "btns";
+    cardTitle.textContent = unit.sub.name;
+    cardPara.textContent = "Assess your knowledge on " + unit.sub.name;
+    next.textContent = "Go to Topics";
 
     btns.appendChild(next);
     card.appendChild(cardTitle);
@@ -75,9 +126,5 @@ function chooseUnit() {
   });
 }
 
-function adminPanel() {
-  alert("hey");
-}
-
 getStarted.addEventListener("click", ChooseModule);
-admin.addEventListener("click", adminPanel);
+cats.addEventListener("click", assessments);
