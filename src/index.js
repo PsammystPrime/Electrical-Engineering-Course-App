@@ -22,13 +22,13 @@ function moduleCard() {
   cardTitle.textContent = "Module One";
   cardPara.textContent = " Get a quick introduction to Electrical Engineering";
   prev.textContent = "Go to Homepage";
-  next.textContent = "Go to modules";
+  next.textContent = "Go to Units";
 
-  // next.addEventListener("click", chooseUnit);
+  next.addEventListener("click", chooseUnit);
   // prev.addEventListener("click", console.log("home"));
 
-  btns.appendChild(next);
   btns.appendChild(prev);
+  btns.appendChild(next);
   card.appendChild(cardTitle);
   card.appendChild(cardPara);
   card.appendChild(btns);
@@ -41,38 +41,50 @@ function ChooseModule() {
   main.textContent = "";
   main.textContent = "Choose a module level for learning";
 
-  console.log(courses);
-
   moduleCard();
-  console.log(courses);
 }
 
-// function unitCard() {
-//   const container = document.createElement("div");
-//   const card = document.createElement("div");
-//   const cardPara = document.createElement("p");
-//   const btns = document.createElement("div");
-//   const next = document.createElement("button");
-//   const prev = document.createElement("button");
-//   getStarted.textContent = "";
-//   container.className = "container";
-//   card.className = "card";
-//   btns.className = "btns";
-//   cardPara.textContent = "cardPara";
-//   cardPara.textContent = " Unit One and two ";
-//   prev.textContent = "Go to modules";
-//   next.textContent = "Go to topics";
+const unitsArray = [
+  { sub: { name: "Mathematics", info: "This is Mathematics" } },
+  { sub: { name: "Principles", info: "This is Principles" } },
+  {
+    sub: { name: "Analogue Electronics", info: "This is Analogue Electronics" },
+  },
+];
 
-//   next.addEventListener("click", chooseTopic);
-//   // prev.addEventListener("click", console.log("home"));
+function chooseUnit() {
+  display.textContent = "";
 
-//   btns.appendChild(next);
-//   btns.appendChild(prev);
-//   card.appendChild(cardPara);
-//   card.appendChild(btns);
-//   container.appendChild(card);
-//   display.appendChild(container);
-// }
+  main.textContent = "Choose a unit";
+  unitsArray.forEach((unit) => {
+    const container = document.createElement("div");
+    const card = document.createElement("div");
+    const cardTitle = document.createElement("h1");
+    const cardPara = document.createElement("p");
+    const btns = document.createElement("div");
+    const next = document.createElement("button");
+    const prev = document.createElement("button");
+    getStarted.textContent = "";
+    container.className = "container";
+    card.className = "card";
+    btns.className = "btns";
+    cardTitle.textContent = unit.sub.name;
+    cardPara.textContent = unit.sub.info;
+    prev.textContent = "Go to Homepage";
+    next.textContent = "Go to Units";
+
+    // next.addEventListener("click", chooseUnit);
+    // prev.addEventListener("click", console.log("home"));
+
+    btns.appendChild(prev);
+    btns.appendChild(next);
+    card.appendChild(cardTitle);
+    card.appendChild(cardPara);
+    card.appendChild(btns);
+    container.appendChild(card);
+    display.appendChild(container);
+  });
+}
 
 // function topicCard() {
 //   const container = document.createElement("div");
@@ -99,18 +111,6 @@ function ChooseModule() {
 //   card.appendChild(btns);
 //   container.appendChild(card);
 //   display.appendChild(container);
-// }
-
-// function chooseUnit() {
-//   display.textContent = "";
-
-//   main.textContent = "Choose a unit";
-//   //   info.textContent = courses.module1[1].Mathematics[0].name;
-//   console.log(courses.module1[1]);
-//   courses.module1.forEach(() => {
-//     // console.log(courses[0].module1);
-//     unitCard();
-//   });
 // }
 
 // function chooseTopic() {
