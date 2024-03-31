@@ -47,4 +47,12 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  color: blueviolet;
+  font-weight: 900;
 }
