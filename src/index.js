@@ -102,7 +102,7 @@ function unitCats() {
   display.textContent = "";
   main.textContent = "Choose a unit";
 
-  courses.forEach((unit) => {
+  courses.reverse().forEach((unit) => {
     const container = document.createElement("div");
     const card = document.createElement("div");
     const cardTitle = document.createElement("h1");
