@@ -5,14 +5,16 @@ const display = document.querySelector(".display");
 
 import { courses } from "./courses.js";
 
-const container = document.createElement("div");
-const card = document.createElement("div");
-const cardPara = document.createElement("p");
-const btns = document.createElement("div");
-const next = document.createElement("button");
-const prev = document.createElement("button");
+// const container = document.createElement("div");
 
-function dd() {
+function moduleCard() {
+  const container = document.createElement("div");
+  const card = document.createElement("div");
+  const cardPara = document.createElement("p");
+  const btns = document.createElement("div");
+  const next = document.createElement("button");
+  const prev = document.createElement("button");
+  getStarted.textContent = "";
   container.className = "container";
   card.className = "card";
   btns.className = "btns";
@@ -20,7 +22,10 @@ function dd() {
   cardPara.textContent = " Module O0ne ";
   prev.textContent = "prev";
   next.textContent = "next";
-  // next.addEventListener("click", () => console.log("end"));
+
+  next.addEventListener("click", chooseUnit);
+  // prev.addEventListener("click", console.log("home"));
+
   btns.appendChild(next);
   btns.appendChild(prev);
   card.appendChild(cardPara);
@@ -32,17 +37,14 @@ function dd() {
 function ChooseModule() {
   main.textContent = "";
   main.textContent = "Choose a module level for learning";
-  info.textContent = courses.module1[0].title;
-
-  // console.log("mod");
-  dd();
-  cardPara.textContent = "Module One";
-
-  next.addEventListener("click", chooseUnit);
-  prev.addEventListener("click", console.log("home"));
 
   console.log(courses);
-  //   console.log(courses.module1[1].Mathematics[1].Algebra[0].body);
+  courses.map(function (course) {
+    moduleCard();
+    console.log(course);
+  });
+
+  console.log(courses);
 }
 
 function chooseUnit() {
