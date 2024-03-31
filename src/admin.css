@@ -1,3 +1,14 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 985px;
+  background-color: cornflowerblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
 .container {
   display: grid;
   height: 500px;
