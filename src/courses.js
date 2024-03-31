@@ -1,78 +1,99 @@
-export const courses = {
-  module1: [
-    { title: "Module1" },
-    [
+export const courses = [
+  {
+    sub: {
+      name: "Mathematics",
+      info: "An introduction to Indices, Algebra, Trigonometry and more.",
+    },
+    details: [
+      { name: "Integers", info: "This is Integers" },
+      { name: "calculus", info: "This is calculus" },
+    ],
+  },
+  {
+    sub: {
+      name: "Principles",
+      info: "Learn on Derived Units and electrical quantities",
+    },
+    details: [
+      { name: "Power Supply", info: "This is Power Supply" },
+      { name: "Theory", info: "This is Theory" },
+    ],
+  },
+  {
+    sub: {
+      name: "Analogue Electronics",
+      info: "Learn on semiconductors,Thermnionic Emissions and Transistors",
+    },
+    details: [
+      { name: "Semiconductors", info: "This is semiconductors" },
+      { name: "conductors", info: "This is conductors" },
+    ],
+  },
+  {
+    sub: {
+      name: "Mechanical Science",
+      info: "Learn forms of energy, statics, thermodynamics and governors",
+    },
+    details: [
+      { name: "Semiconductors", info: "This is semiconductors" },
+      { name: "conductors", info: "This is conductors" },
+    ],
+  },
+  {
+    sub: {
+      name: "Technical Drawing",
+      info: "Concepts,scales and forms of Engineering Projections",
+    },
+    details: [
+      { name: "Semiconductors", info: "This is semiconductors" },
+      { name: "conductors", info: "This is conductors" },
+    ],
+  },
+  {
+    sub: {
+      name: "Insatallation Technology",
+      info: "Get to know wiring systems, accessories and Tests on conduits.",
+    },
+    details: [
+      { name: "Semiconductors", info: "This is semiconductors" },
+      { name: "conductors", info: "This is conductors" },
+    ],
+  },
+  {
+    sub: {
+      name: "Solar Technology",
+      info: "Set up, maintainance and methodologies of Photo-Voltaic Systems",
+    },
+    details: [
+      { name: "Semiconductors", info: "This is semiconductors" },
+      { name: "conductors", info: "This is conductors" },
+    ],
+  },
+
+  {
+    sub: {
+      name: "Communication Skills",
+      info: "Essentials to effective Communication",
+    },
+    details: [
+      { name: "Report Writing", info: "Lear how to write officcial documents" },
       {
-        Mathematics: [
-          { name: "Engineering Mathematics" },
-          [
-            {
-              Algebra: [
-                { name: "Algebra" },
-                {
-                  units: [
-                    { heading: "Algebra ", body: "This is an algebra lesson" },
-                    { heading: "Indices", body: "This is Indices " },
-                    { heading: "Trigonometry", body: "This is trigonometry " },
-                  ],
-                },
-              ],
-            },
-            {
-              Calculus1: {
-                heading: "Calculus 1",
-                body: "This is Calculus 1 ",
-              },
-            },
-            {
-              Trigonometry: {
-                heading: "Trigonometry",
-                body: "This is trigonometry ",
-              },
-            },
-          ],
-        ],
-      },
-      {
-        Principles: [
-          { name: "Electrical Principles" },
-          {
-            Magnetism: {
-              heading: "Electromagnetism",
-              body: "This is Electromagnetism ",
-            },
-            Electrostatics: {
-              heading: "Electrostatics",
-              body: "This is Electrostatics ",
-            },
-            Transformers: {
-              heading: "Transformers",
-              body: "This is Transformers ",
-            },
-          },
-        ],
-      },
-      {
-        Analogue: [
-          { name: "Analogue Electronics" },
-          {
-            Thermnionic: [
-              {
-                heading: "Thermnionic Emission ",
-                body: "This is an Thermnionic Emission lesson",
-              },
-            ],
-            Semiconductor: {
-              heading: "Semiconductor Theory",
-              body: "This is Semiconductor ",
-            },
-            Power: {
-              heading: "Power Supply Unit",
-              body: "This is Power Supply Unit ",
-            },
-          },
-        ],
+        name: "Communication",
+        info: "Learn forms of communication and channels",
       },
     ],
-  ],
-};
+  },
+  {
+    sub: {
+      name: "Electrical Measurements & Fault Diagnosis",
+      info: "Understand Measurement Techniques and fault diagnosis and Maintainance",
+    },
+    details: [
+      { name: "Fundamentals", info: "Introduction to the basics" },
+      {
+        name: "Equipment Reliability",
+        info: "Learn on equipment handling ad design",
+      },
+    ],
+  },
+];
