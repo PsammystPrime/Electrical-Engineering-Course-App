@@ -73,3 +73,31 @@ form {
   border-radius: 10px;
   color: aliceblue;
 }
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8));
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(107, 189, 118);
+  color: rgba(11, 1, 19, 0.808);
+  width: 300px;
+  position: absolute;
+  left: 40%;
+}
+#login > button {
+  background-color: blue;
+  color: azure;
+  width: fit-content;
+  height: 30px;
+}
+button > a {
+  color: azure;
+}
