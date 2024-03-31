@@ -60,14 +60,14 @@ function chooseUnit() {
     cardPara.textContent = unit.sub.info;
     next.textContent = "Go to Topics";
 
-    console.log(unit);
-
     btns.appendChild(next);
     card.appendChild(cardTitle);
     card.appendChild(cardPara);
     card.appendChild(btns);
     container.appendChild(card);
     display.appendChild(container);
+
+    next.addEventListener("click", alertUser);
   });
 }
 
@@ -123,7 +123,13 @@ function unitCats() {
     card.appendChild(btns);
     container.appendChild(card);
     display.appendChild(container);
+
+    next.addEventListener("click", alertUser);
   });
+}
+
+function alertUser() {
+  alert("Contents are only available to premium users");
 }
 
 getStarted.addEventListener("click", ChooseModule);
