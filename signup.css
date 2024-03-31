@@ -1,0 +1,125 @@
+body {
+  display: flex;
+}
+
+.odin {
+  width: 80px;
+  height: 80px;
+  opacity: 75%;
+  background: #e5e7eb;
+}
+
+.logo {
+  background-color: black;
+  position: absolute;
+  top: 150px;
+  opacity: 50%;
+  width: 585px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 75%;
+}
+.text_logo {
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.creator {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  opacity: 40%;
+}
+a {
+  color: white;
+}
+
+form {
+  background-color: white;
+  width: 48em;
+}
+.details {
+  margin-top: 40px;
+}
+input {
+  border: 2px solid #e5e7eb;
+  margin-right: 70px;
+}
+p {
+  width: 440px;
+  padding-left: 33px;
+  font-size: medium;
+  font-weight: bold;
+}
+h1 {
+  padding-left: 20px;
+}
+.others {
+  margin-left: 30px;
+}
+.create_button {
+  margin: 25px 30px;
+  border-radius: 5px;
+  background-color: #596d48;
+  color: white;
+  padding: 9px 30px 9px 30px;
+  cursor: grabbing;
+}
+.create_button:hover {
+  background: white;
+  color: blue;
+}
+.create_button:active {
+  background: #000;
+  color: blue;
+}
+a {
+  color: green;
+  border-color: white;
+  background-color: white;
+}
+a:hover {
+  background-color: greenyellow;
+  color: blue;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one {
+  position: absolute;
+  top: 249px;
+}
+.two {
+  position: absolute;
+  top: 310px;
+}
+.three {
+  position: absolute;
+  top: 370px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+input:valid {
+  border-color: green;
+}
+fieldset {
+  border: none;
+  box-shadow: 0px 10px 10px rgba(210, 212, 209, 0.979);
+}
+fieldset > div {
+  padding-left: 20px;
+}
+.para {
+  height: 20px;
+  color: red;
+}
