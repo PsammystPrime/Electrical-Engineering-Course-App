@@ -56,3 +56,12 @@ h3 {
   color: blueviolet;
   font-weight: 900;
 }
+
+form {
+  align-self: center;
+  padding: 50px 30px;
+  margin-top: 200px;
+  background-color: rgb(38, 84, 90);
+  border-radius: 10px;
+  color: aliceblue;
+}
