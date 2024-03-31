@@ -1,12 +1,12 @@
-.container {
+main {
   background-color: aquamarine;
-  min-height: 100px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.card {
+.display {
   background-color: bisque;
   display: flex;
   flex-direction: column;
@@ -17,10 +17,30 @@
   gap: 30px;
   margin: 10px;
 }
+span {
+  color: blueviolet;
+}
 .cardPara {
-  color: brown;
+  color: rgb(230, 170, 170);
 }
 .btns {
   display: flex;
   gap: 30px;
+}
+
+.container {
+  background-color: brown;
+  height: 200px;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  background-color: cornflowerblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
 }
