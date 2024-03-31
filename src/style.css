@@ -1,7 +1,11 @@
+body {
+  margin: 0px;
+}
 main {
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
+  min-height: 83vh;
 }
 .display {
   background-color: rgb(230, 154, 61);
@@ -30,7 +34,6 @@ span {
   width: 250px;
   color: aliceblue;
   margin-bottom: 10px;
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   row-gap: 300px;
