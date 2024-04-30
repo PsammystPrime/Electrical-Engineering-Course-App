@@ -1,12 +1,20 @@
 import "./App.css";
+import { Link } from "react-router-dom";
+
 export function Nav() {
   return (
     <div className="nav">
       <h1>SPACE</h1>
       <ul className="navLinks">
-        <button>Revision</button>
-        <button>Schools Ranks</button>
-        <button>Careers</button>
+        <Link to="revision">
+          <button>Revision</button>
+        </Link>
+        <Link to="schools">
+          <button>Schools Ranks</button>
+        </Link>
+        <Link to="careers">
+          <button>Careers</button>
+        </Link>
       </ul>
     </div>
   );
@@ -23,7 +31,9 @@ export function Main() {
           Engineering students in Kenya in their success Journey and later
           exploring opportunities in the Industry with ease.
         </p>
-        <button className="getStarted">Get Started</button>
+        <Link to="courses">
+          <button className="getStarted">Get Started</button>
+        </Link>
       </div>
       <div className="cards">
         <div className="card">
