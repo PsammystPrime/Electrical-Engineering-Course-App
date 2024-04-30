@@ -6,6 +6,7 @@
 }
 ul {
   list-style-type: none;
+  text-align: left;
 }
 .nav {
   display: flex;
@@ -42,4 +43,13 @@ ul {
 .footerInfo {
   display: flex;
   justify-content: space-between;
+}
+.footerInfo h1 {
+  text-align: left;
+}
+.info {
+  text-align: left;
+}
+.info h3 {
+  text-align: center;
 }
