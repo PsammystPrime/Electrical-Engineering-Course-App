@@ -1,9 +1,10 @@
 /*Universal tags*/
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
   text-align: center;
+  background-color: #011220;
 }
 ul {
   list-style-type: none;
@@ -16,13 +17,14 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #011220;
 }
 .nav ul {
   display: flex;
   gap: 30px;
 }
 
-/*Main section*/
+/*Main body section*/
 main {
   background-image: url(../public/BG.png);
   background-position: center;
@@ -44,11 +46,13 @@ main {
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 120px;
+  margin-left: 33px;
 }
 .card {
   max-width: 28vw;
   min-height: 35vh;
   background-color: rgb(145, 145, 137);
+  opacity: 85%;
   border-radius: 10px;
   padding: 0 5px;
 }
@@ -57,6 +61,9 @@ main {
 }
 
 /*Footer*/
+footer h1 {
+  max-width: min-content;
+}
 .footerInfo {
   display: flex;
   justify-content: space-between;
