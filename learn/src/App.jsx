@@ -4,9 +4,9 @@ export function Nav() {
     <div className="nav">
       <h1>SPACE</h1>
       <ul className="navLinks">
-        <li key={1}>Revision</li>
-        <li key={2}>Schools Ranks</li>
-        <li key={3}>Careers</li>
+        <button>Revision</button>
+        <button>Schools Ranks</button>
+        <button>Careers</button>
       </ul>
     </div>
   );
@@ -27,16 +27,16 @@ export function Main() {
       </div>
       <div className="cards">
         <div className="card">
-          <h2>Cerificate</h2>
+          <h2>Certificate</h2>
           <p>
             Resources for learning and revision for students in colleges and
-            Tvets
+            Tvets pursuing the Certificate Programme.
           </p>
         </div>
         <div className="card">
           <h2>Diploma</h2>
           <p>
-            Resources for diploma students for the three module programme in
+            Resources for diploma students for the Three Module Programme in
             colleges and Tvets
           </p>
         </div>
