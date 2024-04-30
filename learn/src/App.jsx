@@ -1,13 +1,13 @@
 export function Nav() {
   return (
-    <div>
+    <nav>
       <h1>SPACE</h1>
       <ul className="navLinks">
         <li key={1}>Revision</li>
         <li key={2}>Schools Ranks</li>
         <li key={3}>Careers</li>
       </ul>
-    </div>
+    </nav>
   );
 }
 export function Main() {
