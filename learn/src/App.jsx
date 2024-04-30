@@ -15,7 +15,9 @@ export function Main() {
   return (
     <main>
       <div>
-        <h1>Learn Electrical and br Electronics Engineering</h1>
+        <h1>
+          Learn Electrical and <br /> Electronics Engineering
+        </h1>
         <p>
           The first platform built to help Electrical and Electronics
           Engineering students in Kenya in their success Journey and later
