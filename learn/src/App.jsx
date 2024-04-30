@@ -10,7 +10,44 @@ export function Nav() {
     </div>
   );
 }
-export function Main() {}
+export function Main() {
+  return (
+    <main>
+      <div>
+        <h1>Learn Electrical and br Electronics Engineering</h1>
+        <p>
+          The first platform built to help Electrical and Electronics
+          Engineering students in Kenya in their success Journey and later
+          exploring opportunities in the Industry with ease.
+        </p>
+        <button className="getStarted">Get Started</button>
+      </div>
+      <div>
+        <div className="card">
+          <h2>Cerificate</h2>
+          <p>
+            Resources for learning and revision for students in colleges and
+            Tvets
+          </p>
+        </div>
+        <div className="card">
+          <h2>Diploma</h2>
+          <p>
+            Resources for diploma students for the three module programme in
+            colleges and Tvets
+          </p>
+        </div>
+        <div className="card">
+          <h2>Degree</h2>
+          <p>
+            Well curated resources for students in Universities to aid them in
+            their Degree programme.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
 export function Footer() {
   return (
     <footer>
