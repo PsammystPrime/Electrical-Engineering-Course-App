@@ -18,20 +18,31 @@ ul {
   display: flex;
   gap: 30px;
 }
-
+main {
+  background-image: url(../public/BG.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 150vh;
+  min-width: 100vw;
+}
 .intro {
   text-align: left;
-  max-width: 45vw;
+  padding-left: 20px;
+  min-height: 70vh;
+  padding-top: 20vh;
+}
+.intro p {
+  max-width: 30vw;
 }
 .cards {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin: 15px 0;
+  margin-top: 120px;
 }
 .card {
   max-width: 28vw;
-  min-height: 40vh;
+  min-height: 35vh;
   background-color: rgb(145, 145, 137);
   border-radius: 10px;
   padding: 0 5px;
@@ -39,7 +50,6 @@ ul {
 .card p {
   text-align: left;
 }
-
 .footerInfo {
   display: flex;
   justify-content: space-between;
