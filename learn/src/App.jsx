@@ -1,18 +1,24 @@
 export function Nav() {
-  <>
-    <h1>SPACE</h1>
-    <ul className="navLinks">
-      <li>Revision</li>
-      <li>Schools Ranks</li>
-      <li>Careers</li>
-    </ul>
-  </>;
+  return (
+    <div>
+      <h1>SPACE</h1>
+      <ul className="navLinks">
+        <li key={1}>Revision</li>
+        <li key={2}>Schools Ranks</li>
+        <li key={3}>Careers</li>
+      </ul>
+    </div>
+  );
 }
+export function Main() {}
+export function Footer() {}
 
 export default function App() {
-  <>
-    <Nav></Nav>
-    <Main></Main>
-    <Footer></Footer>
-  </>;
+  return (
+    <>
+      <Nav></Nav>
+      <Main></Main>
+      <Footer></Footer>
+    </>
+  );
 }
