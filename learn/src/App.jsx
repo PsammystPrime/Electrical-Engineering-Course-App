@@ -11,7 +11,34 @@ export function Nav() {
   );
 }
 export function Main() {}
-export function Footer() {}
+export function Footer() {
+  return (
+    <footer>
+      <div className="footerInfo">
+        <h1 className="footerTitle">
+          Learn Electrical & <br />
+          Electronics Engineering
+        </h1>
+        <div>
+          <h3>INFO</h3>
+          <ul>
+            <li key={"abt"}>About us</li>
+            <li key={"priv"}>Privacy</li>
+            <li key={"tc"}>Terms & Conditions</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>+254 716-041-426</li>
+            <li>PsammystPrime384@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div className="copyright">2024-Copyright</div>
+    </footer>
+  );
+}
 
 export default function App() {
   return (
