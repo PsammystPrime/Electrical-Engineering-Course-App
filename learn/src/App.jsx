@@ -14,7 +14,7 @@ export function Nav() {
 export function Main() {
   return (
     <main>
-      <div>
+      <div className="intro">
         <h1>
           Learn Electrical and <br /> Electronics Engineering
         </h1>
@@ -25,7 +25,7 @@ export function Main() {
         </p>
         <button className="getStarted">Get Started</button>
       </div>
-      <div>
+      <div className="cards">
         <div className="card">
           <h2>Cerificate</h2>
           <p>
