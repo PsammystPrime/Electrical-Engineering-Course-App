@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Nav() {
   return (
     <div className="nav">
-      <h1>SPACE</h1>
+      <h1>LEEEK</h1>
       <ul className="navLinks">
         <Link to="revision">
           <button>Revision</button>
@@ -24,7 +24,7 @@ export function Main() {
     <main>
       <div className="intro">
         <h1>
-          Learn Electrical and <br /> Electronics Engineering
+          Learn Electrical and <br /> Electronics Engineering <br /> Kenya
         </h1>
         <p>
           The first platform built to help Electrical and Electronics
@@ -67,7 +67,7 @@ export function Footer() {
       <div className="footerInfo">
         <h1 className="footerTitle">
           Learn Electrical & <br />
-          Electronics Engineering
+          Electronics Engineering Kenya
         </h1>
         <div className="info">
           <h3>INFO</h3>
