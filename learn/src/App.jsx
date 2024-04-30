@@ -59,7 +59,7 @@ export function Footer() {
           Learn Electrical & <br />
           Electronics Engineering
         </h1>
-        <div>
+        <div className="info">
           <h3>INFO</h3>
           <ul>
             <li key={"abt"}>About us</li>
