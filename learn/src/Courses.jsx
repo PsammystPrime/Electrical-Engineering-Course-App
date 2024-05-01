@@ -31,17 +31,23 @@ export function Levels() {
         <div className="level">
           <h3>Certificate</h3>
           <p>Resources for the Certificate programme</p>
-          <button>Select Programme</button>
+          <Link to={"certificate"}>
+            <button>Select Programme</button>
+          </Link>
         </div>
         <div className="level">
           <h3>Diploma</h3>
           <p>Resources for the Diploma programme</p>
-          <button>Select Programme</button>
+          <Link to={"diploma"}>
+            <button>Select Programme</button>
+          </Link>
         </div>
         <div className="level">
           <h3>Degree</h3>
           <p>Resources for the Degree programme</p>
-          <button>Select Programme</button>
+          <Link to={"degree"}>
+            <button>Select Programme</button>
+          </Link>
         </div>
       </div>
     </>
