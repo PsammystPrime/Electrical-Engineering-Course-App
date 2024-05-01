@@ -2,12 +2,14 @@ import "./App.css";
 import { Link } from "react-router-dom";
 
 export function Nav() {
+  const name = "Revision";
+
   return (
     <div className="nav">
       <h1>LEEEK</h1>
       <ul className="navLinks">
         <Link to="revision">
-          <button>Revision</button>
+          <button>{name}</button>
         </Link>
         <Link to="schools">
           <button>Schools Ranks</button>
