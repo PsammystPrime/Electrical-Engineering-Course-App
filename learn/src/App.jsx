@@ -8,6 +8,9 @@ export function Nav() {
     <div className="nav">
       <h1>LEEEK</h1>
       <ul className="navLinks">
+        <Link to="/">
+          <button>Home</button>
+        </Link>
         <Link to="revision">
           <button>{name}</button>
         </Link>
