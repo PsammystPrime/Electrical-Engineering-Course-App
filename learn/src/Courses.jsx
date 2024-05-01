@@ -9,7 +9,7 @@ export function Nav() {
     <div className="nav">
       <h1>LEEEK</h1>
       <ul className="navLinks">
-        <Link to="revision">
+        <Link to="/">
           <button>{name}</button>
         </Link>
         <Link to="schools">
