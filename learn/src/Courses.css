@@ -13,6 +13,19 @@
   padding: 0 15px;
   color: #ffffff;
 }
-.allSubjects {
+.allSubjects,
+.allUnits {
   text-align: left;
+}
+
+.unit {
+  height: 66px;
+  align-content: center;
+  padding-left: 1rem;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+.unit:hover {
+  background-color: rgb(43, 41, 37);
 }

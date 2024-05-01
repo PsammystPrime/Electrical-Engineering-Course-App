@@ -29,17 +29,32 @@ export function AllProgrammes() {
 export function Module1() {
   function Subjects() {
     return (
-      <div className="allSubjects">
-        <Link to={"maths"}>
-          <p className="subject">Mathematics</p>
-        </Link>
-        <p>Analogue Electronics</p>
-        <p>Chemistry</p>
-        <p>Installation Technology</p>
-        <p>Electrical Principles</p>
-        <p>Technical Drawing</p>
-        <p>Electrical Measurement & Fault Diagnosis</p>
-      </div>
+      <>
+        <h3>Select unit</h3>
+        <div className="allUnits">
+          <Link to={"maths"}>
+            <p className="unit">Mathematics</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Analogue Electronics</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Chemistry</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Installation Technology</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Electrical Principles</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Technical Drawing</p>
+          </Link>
+          <Link to={"maths"}>
+            <p className="unit">Electrical Measurement & Fault Diagnosis</p>
+          </Link>
+        </div>
+      </>
     );
   }
   return (
