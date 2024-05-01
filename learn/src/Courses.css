@@ -1,0 +1,25 @@
+/*Universal tags*/
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  /* background-color: #011220; */
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+/*Navigation*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #011220;
+}
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
