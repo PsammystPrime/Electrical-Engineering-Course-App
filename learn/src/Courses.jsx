@@ -1,3 +1,11 @@
+import { Nav, Footer } from "./App";
+import "./Courses.css";
 export default function Courses() {
-  return <h1>Courses</h1>;
+  return (
+    <>
+      <Nav />
+      <h1>Courses</h1>
+      <Footer />
+    </>
+  );
 }
