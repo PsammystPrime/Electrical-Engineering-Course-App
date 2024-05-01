@@ -30,7 +30,9 @@ export function Module1() {
   function Subjects() {
     return (
       <div className="allSubjects">
-        <p className="subject">Mathematics</p>
+        <Link to={"maths"}>
+          <p className="subject">Mathematics</p>
+        </Link>
         <p>Analogue Electronics</p>
         <p>Chemistry</p>
         <p>Installation Technology</p>
@@ -44,6 +46,23 @@ export function Module1() {
     <>
       <Nav />
       <Subjects />
+      <Footer />
+    </>
+  );
+}
+
+export function Maths() {
+  const arr = ["pdf one", "pdf two", "pdf three"];
+  return (
+    <>
+      <Nav />
+      {arr.map((item, index) => {
+        return (
+          <div key={index} className="allSubjects">
+            <div key={item}>{item}</div>
+          </div>
+        );
+      })}
       <Footer />
     </>
   );
