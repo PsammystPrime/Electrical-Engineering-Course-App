@@ -1,5 +1,6 @@
 import { Footer } from "./App";
 import { Link } from "react-router-dom";
+import "./Courses.css";
 
 export function Nav() {
   const name = "Learn";
@@ -25,7 +26,24 @@ export function Nav() {
 export function Levels() {
   return (
     <>
-      <h1>Courses</h1>
+      <h2>Choose your Learning Programme</h2>
+      <div className="levels">
+        <div className="level">
+          <h3>Certificate</h3>
+          <p>Resources for the Certificate programme</p>
+          <button>Select Programme</button>
+        </div>
+        <div className="level">
+          <h3>Diploma</h3>
+          <p>Resources for the Diploma programme</p>
+          <button>Select Programme</button>
+        </div>
+        <div className="level">
+          <h3>Degree</h3>
+          <p>Resources for the Degree programme</p>
+          <button>Select Programme</button>
+        </div>
+      </div>
     </>
   );
 }

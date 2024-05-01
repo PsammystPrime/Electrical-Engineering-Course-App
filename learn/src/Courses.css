@@ -1,25 +1,15 @@
-/*Universal tags*/
-#root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 2rem;
-  text-align: center;
-  /* background-color: #011220; */
-}
-ul {
-  list-style-type: none;
-  text-align: left;
-}
-
-/*Navigation*/
-.nav {
+.levels {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #011220;
+  gap: 20px;
 }
-.nav ul {
-  display: flex;
-  gap: 30px;
+.level {
+  min-width: 28vw;
+  min-height: 35vh;
+  background-color: rgb(145, 145, 137);
+  opacity: 85%;
+  border-radius: 10px;
+  padding: 0 15px;
+  color: #ffffff;
 }
