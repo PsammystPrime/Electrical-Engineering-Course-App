@@ -26,25 +26,24 @@ export function AllProgrammes() {
   );
 }
 
-export function Mod1() {
-  return (
-    <div className="allSubjects">
-      <p className="subject">Mathematics</p>
-      <p>Analogue Electronics</p>
-      <p>Chemistry</p>
-      <p>Installation Technology</p>
-      <p>Electrical Principles</p>
-      <p>Technical Drawing</p>
-      <p>Electrical Measurement & Fault Diagnosis</p>
-    </div>
-  );
-}
-
-export function Certificate1() {
+export function Module1() {
+  function Subjects() {
+    return (
+      <div className="allSubjects">
+        <p className="subject">Mathematics</p>
+        <p>Analogue Electronics</p>
+        <p>Chemistry</p>
+        <p>Installation Technology</p>
+        <p>Electrical Principles</p>
+        <p>Technical Drawing</p>
+        <p>Electrical Measurement & Fault Diagnosis</p>
+      </div>
+    );
+  }
   return (
     <>
       <Nav />
-      <Mod1 />
+      <Subjects />
       <Footer />
     </>
   );
