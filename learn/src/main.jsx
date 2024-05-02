@@ -5,6 +5,7 @@ import "./index.css";
 import Courses from "./Courses.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Certificate, { Maths, Module1 } from "./cert.jsx";
+// import { Analytics } from "@vercel/analytics/react";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
