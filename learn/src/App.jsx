@@ -94,7 +94,6 @@ export function Footer() {
     </footer>
   );
 }
-
 export default function App() {
   return (
     <>
