@@ -27,6 +27,17 @@ export function Nav() {
   );
 }
 export function Main() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log("yye");
+        entry.target.classList.add("show");
+      }
+    });
+  });
+  const hiddenCards = document.querySelectorAll(".card");
+  hiddenCards.forEach((card) => observer.observe(card));
+
   return (
     <main>
       <div className="intro">

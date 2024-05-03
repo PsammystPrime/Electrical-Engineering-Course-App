@@ -64,11 +64,6 @@ main {
 .cards:nth-child(3) {
   transition-delay: 400ms;
 }
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
 .card {
   transform: translateX(-100%);
   transition: all 1s;
@@ -84,6 +79,11 @@ main {
 }
 .card p {
   text-align: left;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 /*Footer*/
