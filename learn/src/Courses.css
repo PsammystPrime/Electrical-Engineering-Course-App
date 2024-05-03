@@ -29,9 +29,19 @@
 .unit:hover {
   background-color: rgb(43, 41, 37);
 }
+.doc-container {
+  display: flex;
+}
+.doc-box {
+  background-color: red;
+  margin: 5px;
+  max-width: fit-content;
+}
 .doc {
-  width: 300px;
-  scale: 40%;
+  max-width: 300px;
+  background-color: rgb(102, 89, 89);
+  overflow: hidden;
+  scale: 99%;
 }
 .page {
   height: 300px;
