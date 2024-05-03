@@ -29,3 +29,11 @@
 .unit:hover {
   background-color: rgb(43, 41, 37);
 }
+.doc {
+  width: 300px;
+  scale: 40%;
+}
+.page {
+  height: 300px;
+  overflow: hidden;
+}
