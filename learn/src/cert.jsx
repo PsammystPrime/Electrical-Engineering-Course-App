@@ -1,7 +1,7 @@
 import { Footer } from "./App";
 import { Nav } from "./Courses";
 import { Link } from "react-router-dom";
-import imag3 from "/CRT Worked examples.pdf";
+import image3 from "/CRT Worked examples.pdf";
 import image2 from "/Analogue Electronics 1, DEE 1 notes_075733 (2).pdf";
 import image from "/KRA.pdf";
 import "./Courses.css";
@@ -86,7 +86,7 @@ export function Module1() {
 }
 
 export function Maths() {
-  const arr = [image, image2];
+  const arr = [image, image2, image3];
   const [numPages, setNumPages] = useState(null);
   const [pageNum, setPageNum] = useState(1);
 
