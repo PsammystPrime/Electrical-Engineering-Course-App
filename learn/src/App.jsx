@@ -6,7 +6,9 @@ export function Nav() {
 
   return (
     <div className="nav">
-      <h1>LEEEK</h1>
+      <div className="title-container">
+        <h1 className="title">LEEEK</h1>
+      </div>
       <ul className="navLinks">
         <Link to="/">
           <button>Home</button>
