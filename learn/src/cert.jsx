@@ -5,10 +5,9 @@ import imag3 from "/CRT Worked examples.pdf";
 import image2 from "/Analogue Electronics 1, DEE 1 notes_075733 (2).pdf";
 import image from "/KRA.pdf";
 import "./Courses.css";
-import { Document, Page } from "react-pdf";
 import { useState } from "react";
 import { pdfjs } from "react-pdf";
-import { all } from "axios";
+import { Document, Page } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
