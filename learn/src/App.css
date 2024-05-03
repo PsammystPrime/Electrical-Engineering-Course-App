@@ -42,6 +42,10 @@ main {
   min-height: 150vh;
   min-width: 100vw;
 }
+.getStarted {
+  border: 2px solid #ffffff;
+  color: rgb(9, 252, 252);
+}
 .intro {
   text-align: left;
   padding-left: 20px;
