@@ -8,9 +8,14 @@ import "./Courses.css";
 import { useState } from "react";
 import { pdfjs } from "react-pdf";
 import { Document, Page } from "react-pdf";
-import { jsPDF } from "jspdf";
 
-//config for react-pdf
+/*code for pdf generation and then downloading it*/
+// import { jsPDF } from "jspdf";
+// const doc = new jsPDF();
+// doc.text("Hello world!", 10, 10);
+//   doc.save("a4.pdf");
+
+//config for react-pdf to render pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
   import.meta.url
@@ -88,11 +93,6 @@ export function Maths() {
   function loadDocument({ numPages }) {
     setNumPages(numPages);
   }
-
-  // const doc = new jsPDF();
-
-  // doc.text("Hello world!", 10, 10);
-  //   doc.save("a4.pdf");
 
   return (
     <>
