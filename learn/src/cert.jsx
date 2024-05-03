@@ -1,6 +1,17 @@
 import { Footer } from "./App";
 import { Nav } from "./Courses";
 import { Link } from "react-router-dom";
+import image from "/CRT Worked examples.pdf";
+import image2 from "/Analogue Electronics 1, DEE 1 notes_075733 (2).pdf";
+import "./Courses.css";
+import { Document, Page } from "react-pdf";
+import { useState } from "react";
+import { pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url
+).toString();
 
 export function AllProgrammes() {
   return (
@@ -67,17 +78,21 @@ export function Module1() {
 }
 
 export function Maths() {
-  const arr = ["pdf one", "pdf two", "pdf three"];
+  // const arr = [image, image2];
+  const [numPages, setNumPages] = useState(null);
+  const [pageNum, setPageNum] = useState(1);
+
+  function loadDocument({ numPages }) {
+    setNumPages(numPages);
+  }
   return (
     <>
       <Nav />
-      {arr.map((item, index) => {
-        return (
-          <div key={index} className="allSubjects">
-            <div key={item}>{item}</div>
-          </div>
-        );
-      })}
+      <h2>Mathematdics</h2>
+      <Document file={image} onLoadSuccess={loadDocument}>
+        <Page pageNumber={pageNum}></Page>
+      </Document>
+
       <Footer />
     </>
   );
