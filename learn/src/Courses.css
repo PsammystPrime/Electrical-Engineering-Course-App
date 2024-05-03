@@ -18,6 +18,7 @@
   text-align: left;
 }
 
+/* individual units */
 .unit {
   height: 66px;
   align-content: center;
@@ -29,6 +30,8 @@
 .unit:hover {
   background-color: rgb(43, 41, 37);
 }
+
+/* pdf thumbnails */
 .doc-container {
   display: flex;
 }
@@ -44,6 +47,6 @@
   scale: 99%;
 }
 .page {
-  height: 300px;
+  height: 200px;
   overflow: hidden;
 }
