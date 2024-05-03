@@ -8,7 +8,9 @@ import "./Courses.css";
 import { useState } from "react";
 import { pdfjs } from "react-pdf";
 import { Document, Page } from "react-pdf";
+import { jsPDF } from "jspdf";
 
+//config for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
   import.meta.url
@@ -79,21 +81,38 @@ export function Module1() {
 }
 
 export function Maths() {
-  // const arr = [image, image2];
+  const arr = [image, image2];
   const [numPages, setNumPages] = useState(null);
   const [pageNum, setPageNum] = useState(1);
 
   function loadDocument({ numPages }) {
     setNumPages(numPages);
   }
+
+  // const doc = new jsPDF();
+
+  // doc.text("Hello world!", 10, 10);
+  //   doc.save("a4.pdf");
+
   return (
     <>
       <Nav />
-      <h2>Mathematics</h2>
-      <div className="pages">
-        <Document className="doc" file={image} onLoadSuccess={loadDocument}>
-          <Page className="page" pageNumber={pageNum}></Page>
-        </Document>
+      <h2>Mathematdics</h2>
+      <div className="doc-container">
+        {arr.map((item) => {
+          return (
+            <div className="doc-box" key={item}>
+              <Document
+                className="doc"
+                file={item}
+                onLoadSuccess={loadDocument}
+              >
+                <Page className="page" pageNumber={pageNum}></Page>
+                <h1>{item}</h1>
+              </Document>
+            </div>
+          );
+        })}
       </div>
 
       <Footer />
