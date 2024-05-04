@@ -85,7 +85,7 @@ export function Module1() {
 }
 
 export function Thumbs() {
-  const thumbnailArray = [image, image2, image3, image2, image];
+  const thumbnailArray = [image2, image3];
 
   return (
     <>
