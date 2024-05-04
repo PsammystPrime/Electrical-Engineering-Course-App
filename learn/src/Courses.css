@@ -34,11 +34,14 @@
 /* pdf thumbnails */
 .doc-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .doc-box {
   background-color: red;
   margin: 5px;
   max-width: fit-content;
+  overflow: hidden;
+  border-radius: 15px;
 }
 .doc {
   max-width: 300px;
