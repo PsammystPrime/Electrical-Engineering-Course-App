@@ -5,7 +5,6 @@ import image3 from "/CRT Worked examples.pdf";
 import image2 from "/Analogue Electronics 1, DEE 1 notes_075733 (2).pdf";
 import image from "/KRA.pdf";
 import "./Courses.css";
-import { useState } from "react";
 import { pdfjs } from "react-pdf";
 import { Document, Page } from "react-pdf";
 
@@ -85,36 +84,35 @@ export function Module1() {
   );
 }
 
-export function Maths() {
-  const arr = [image, image2, image3];
-  const [numPages, setNumPages] = useState(null);
-  const [pageNum, setPageNum] = useState(1);
-
-  function loadDocument({ numPages }) {
-    setNumPages(numPages);
-  }
+export function Thumbs() {
+  const thumbnailArray = [image, image2, image3, image2, image];
 
   return (
     <>
-      <Nav />
-      <h2>Mathematdics</h2>
       <div className="doc-container">
-        {arr.map((item) => {
+        {thumbnailArray.map((item) => {
           return (
             <div className="doc-box" key={item}>
-              <Document
-                className="doc"
-                file={item}
-                onLoadSuccess={loadDocument}
-              >
-                <Page className="page" pageNumber={pageNum}></Page>
-                <h1>{item}</h1>
-              </Document>
+              <a href={item}>
+                <Document className="doc" file={item}>
+                  <Page className="page" pageNumber={1}></Page>
+                  <h2>{item}</h2>
+                </Document>
+              </a>
             </div>
           );
         })}
       </div>
+    </>
+  );
+}
 
+export function Maths() {
+  return (
+    <>
+      <Nav />
+      <h2>Mathematics</h2>
+      <Thumbs />
       <Footer />
     </>
   );
