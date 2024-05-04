@@ -30,7 +30,7 @@ export function Main() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log("yye");
+        console.log("yes");
         entry.target.classList.add("show");
       }
     });
